@@ -5,7 +5,7 @@
 }
 
 :root {
-  --left-width: max(30%, 300px);
+  --left-width: max(33%, 350px);
   --right-width: calc(100vw - var(--left-width));
   --button-color: #596D48;
 }
@@ -13,6 +13,7 @@
 body {
   display: flex;
   flex-direction: row;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   height: 100vh;
 }
@@ -21,7 +22,43 @@ body {
   color: #fff;
   background-image: url("../images/leaves.png");
   height: 100%;
-  width: var(--left-width)
+  width: var(--left-width);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+
+  background-color: rgba(8, 8, 8, 0.5);
+  padding: 1rem;
+}
+
+#logo-container img {
+  width: 7rem;
+  height: auto;
+}
+
+#logo-container h1 {
+  font-family: "Norse-Bold";
+  font-size: 7rem;
+}
+
+#credit {
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+#credit a {
+  color: white;
 }
 
 #form-section {
