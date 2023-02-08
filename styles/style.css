@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: local("Norse-bold"), url("fonts/Norse-Bold.otf");
+  font-weight: bold;
+}
+
+:root {
+  --left-width: max(30%, 300px);
+  --right-width: calc(100vw - var(--left-width));
+  --button-color: #596D48;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+
+  height: 100vh;
+}
+
+#logo-section {
+  color: #fff;
+  background-image: url("../images/leaves.png");
+  height: 100%;
+  width: var(--left-width)
+}
+
+#form-section {
+  width: var(--right-width)
+}
